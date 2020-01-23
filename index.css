@@ -1,0 +1,68 @@
+.parent {
+    position: relative;
+    top: 0;
+    left: 0;
+}
+
+.pughNoMouthImg {
+    position: static;
+}
+
+.slidingPringle {
+    position: absolute;
+    left: 500px;
+    top: 50px;
+    animation: slideToMouth 2s infinite;
+}
+
+.spinningPringlesCan {
+    position: absolute;
+    left: 500px;
+    top: 50px;
+    height: 100px;
+    width: 100px;
+    animation: spin 2s infinite;
+}
+
+.slidingMouth {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    animation: slideMouth 2s infinite;
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(320deg);
+    }
+    to {
+        transform: rotate(-40deg);
+    }
+}
+
+@keyframes slideMouth {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(50px);
+    }
+}
+
+@keyframes slideToMouth {
+    0% {
+        transform: translate(0);
+    }
+    100% {
+        transform: translate(-210px, 250px);
+    }
+}
+
+@keyframes pringleShrink {
+    0% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(0);
+    }
+}
